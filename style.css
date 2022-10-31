@@ -1,0 +1,191 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600 */
+
+html {
+    background-color: hsl(217, 54%, 11%);
+}
+
+body {
+    height: 100px;
+    width: 100vh;
+    margin: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main_body {
+    position: relative;
+    height: 31rem;
+    width: 18rem;
+    background-color: hsl(216, 50%, 16%);
+    margin: 13% auto;
+    border-radius: 8px;
+    
+}
+
+.nft {
+    position: absolute;
+}
+
+.img {
+    margin: 16px;
+    position: relative;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.img img{
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 16px;
+    z-index: -1;
+}
+
+.img:hover::before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(38, 221, 245, 0.5);
+    position: absolute;
+    margin-top: 16px;
+    border-radius: 8px;
+    background-image: url(/images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    margin-bottom: 5px;
+    
+
+}
+
+.nft_body{
+    margin: 16px;
+    position: relative;
+}
+
+.title {
+    color: hsl(0, 0%, 100%);
+    display: block;
+    position: inherit;
+    font-weight: 450;
+    cursor: pointer;
+}
+
+.title:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.paragrah {
+    font-size: 16px;
+    display: block;
+    position: absolute;
+    width: 300px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 380;
+    margin-top: 10px;
+}
+
+.price {
+    margin-top: 69px;
+    color: hsl(178, 100%, 50%);
+    font-size: 0.9rem;
+}
+
+.price img {
+    height: 15px;
+}
+
+.time {
+    text-align: center;
+    display: flex;
+    margin-top: 69px;
+    right: 0;
+    color:  hsl(215, 51%, 70%);
+    font-size: 0.85rem;
+    align-items: flex-end;
+}
+
+.time img {
+    margin-right: 3px;
+    font-size: 1rem;
+}
+
+.creater {
+    margin-top: 50%;
+    display: flex;
+    align-items: center;
+    border-top: solid rgba(101, 193, 210, 0.3) 0.05rem;
+    width: 100%;
+}
+
+.creater img {
+    width: 32px;
+    background-color: white;
+    border-radius: 100%;
+    border: solid white 1px;
+    margin-top: 10px;
+
+}
+
+.first-letter {
+    color: hsl(215, 51%, 70%);
+    font-size: 0.9rem;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.second-letter {
+    color: hsl(0, 0%, 100%);
+    font-size: 0.9rem;
+    margin-left: 5px;
+    margin-top:10px;
+    cursor: pointer;
+}
+
+.second-letter:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+@media screen and (max-width:375px) {
+    body {
+        width: 100vh;
+    }
+}
